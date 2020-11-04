@@ -20,7 +20,7 @@ public final class ClassHelper {
     private static final Set<Class<?>> CLASS_SET ;
 
     static {
-        String appBasePackage = ConfigConstant.APP_BASE_PACKAGE.getStatusMsg();
+        String appBasePackage =  ConfigHelper.getAppBasePackage();
         CLASS_SET = ClassUtil.getClassSet(appBasePackage);
     }
 
